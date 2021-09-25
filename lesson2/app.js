@@ -1,23 +1,19 @@
-$('#light').click(function(){
-	$('body').css('background-color',"powderblue");
-	$('.boxes').css('background-color',"cornsilk");
-	$('.content').css('background-color',"peachpuff");
-		$('.content').css('font-family',"serif");
-	$('body').css('color',"navy");
-})
+console.log("test.....");
 
-$('#dark').click(function(){
-	$('body').css('background-color',"black");
-	$('.boxes').css('background-color',"navy");
-	$('.content').css('background-color',"indigo");
-		$('.content').css('font-family',"serif");
-	$('body').css('color',"white");
-})
+var c = document.getElementById("mycanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.moveTo(90,50);
+ctx.lineTo(210,10);
+ctx.moveTo(190,10);
+ctx.lineTo(300,50);
+ctx.strokeStyle = "blue";
+ctx.lineWidth = 5;
+ctx.stroke();
 
-$('#fancy').click(function(){
-	$('body').css('background-color',"lightslategray");
-	$('.boxes').css('background-color',"gray");
-	$('.content').css('background-color',"oldlace");
-	$('.content').css('font-family',"monospace");
-	$('body').css('color',"black");
-})
+ctx.fillStyle = 'rgb(200,50,10)';
+ctx.fillRect(75,125,100);
+
+ctx.strokeStyle = "green";
+ctx.strokeRect(50,100,200,150);
